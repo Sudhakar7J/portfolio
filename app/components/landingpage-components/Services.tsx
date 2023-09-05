@@ -4,7 +4,7 @@ import overlay from '../../assets/landingpage-assets/images/circular.png'
 
 export default function Services() {
   return (
-    <main className="rounded-3xl bg-[#3d3f3c] px-4 md:px-40 py-10 md:py-20">
+    <main className="rounded-3xl bg-[#3d3f3c] px-4 md:px-40 py-10 md:py-20 z-10">
       <div className="flex flex-col flex-wrap">
         <div className="text-2xl md:text-5xl text-white font-timesnew md:py-4">
           <span className="text-white">My </span>

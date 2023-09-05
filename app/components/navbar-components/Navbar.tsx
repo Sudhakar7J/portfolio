@@ -10,7 +10,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className="flex flex-row justify-between px-2 py-6 md:px-20 md:py-6 bg-[#3D3F3C]">
+    <div className="flex flex-row justify-between px-2 py-6 md:px-40 md:py-6 bg-[#3D3F3C]">
       <div className="flex items-center cursor-pointer">
         <a href="/"></a>
         <div className="relative w-8 h-8 bg-[#FF6000] rounded-full flex items-center justify-center">
