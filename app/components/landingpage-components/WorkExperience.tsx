@@ -13,15 +13,15 @@ export default function WorkExperience() {
           <span>&</span>
           <span className="text-[#FF6000]">Work Experience</span>
         </div>
-        <div className="flex md:flex-row flex-wrap md:flex-nowrap">
+        <div className="flex md:flex-row flex-wrap md:flex-nowrap justify-between">
           {experiencemockdata.map((item, index) => (
-            <div className="md:w-1/2 py-4 md:py-0 px-2 md:px-20 px-auto mx-auto justify-between" key={index}>
+            <div className="md:w-1/2 py-4 md:py-0 px-2 md:px-20 flex flex-col flex-grow justify-between" key={index}>
               <div className="text-[#FF6000] text-xl md:text-3xl font-semibold capitalize">{item.category}</div>
               <div className=" border bg-[#3d3f3c] my-4"></div>
 
               {item.subcategories.map((subcategory, subIndex) => (
                 <div key={subIndex} className="flex md:flex-row justify-between py-4 md:mx-4">
-                  <div className="md:px-6 px-auto">
+                  <div className="md:px-6 px-auto ">
                     <div className="text-black text-md md:text-2xl capitalize font-semibold ">{subcategory.name}</div>
                     <div className="text-[#3d3f3c] text-md md:text-md capitalize ">{subcategory.location}</div>
                   </div>
