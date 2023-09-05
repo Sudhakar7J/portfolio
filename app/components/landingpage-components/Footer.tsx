@@ -1,21 +1,24 @@
+import Image from 'next/image'
 import React from 'react'
+import arrow from '@/app/assets/landingpage-assets/images/arrow.png'
 
 export default function Footer() {
   return (
-    <footer className="bg-[#3d3f3c] rounded-t-3xl md:px-20">
+    <footer className="bg-[#3d3f3c] rounded-t-3xl md:px-20 md:pt-10">
       <div className="justify-center items-center">
         <div className="flex flex-row py-8 justify-center items-center">
-          <div className="text-xl md:text-3xl text-white font-semibold">
-            <div className=" space-x-3 text-3xl">
-              Let&apos;s <span className="text-[#FF6000]">Connect</span>
+          <div className=" text-white font-semibold font-timesnew">
+            <div className=" space-x-3 text-3xl md:text-5xl">
+              Let&apos;s <span className="text-[#FF6000]">Connect</span> there
             </div>
           </div>
           <div className="md:flex-grow"></div>
-          <div className="space-x-8  flex flex-row justify-center items-center">
-            <div className="relative md:block hidden ">
-              <button className="bg-white absolute left-0 top-0 px-20 rounded-3xl md:pb-4 py-6 "></button>
-              <button className="rounded-3xl bg-[#FF6000] relative ml-8 justify-end w-full">
-                <div className="text-white font-medium px-4 py-4 md:py-3 text-xs md:text-xs">Hire me now</div>
+          <div className="space-x-8  hidden md:block flex-row relative">
+            <div className="flex items-center pl-2">
+              <button className="bg-[#f1f2f1] absolute left-0 top-0 px-20 rounded-3xl md:pb-4 py-6 z-10"></button>
+              <Image src={arrow} alt={''} className="md:w-8 w-10 flex justify-center items-center z-20" />
+              <button className="rounded-3xl bg-[#FF6000] relative ml-4 justify-end z-10">
+                <div className="text-white font-medium px-4 py-4 md:py-3 text-xs md:text-xs">View My Portfolio</div>
               </button>
             </div>
           </div>

@@ -20,3 +20,11 @@ body {
   color: #000;
   background-color: #fff;
 }
+
+.font-timesnew {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.font-verdana {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

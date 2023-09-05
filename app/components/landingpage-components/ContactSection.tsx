@@ -1,11 +1,13 @@
 import React from 'react'
+import arrow from '@/app/assets/landingpage-assets/images/arrow.png'
+import Image from 'next/image'
 
 export default function ContactSection() {
   return (
-    <div className="px-5 grid gap-8 grid-cols-1 md:grid-cols-2 py-24 mx-auto  text-gray-900 rounded-lg">
+    <div className="px-5 grid gap-8 grid-cols-1 md:grid-cols-2 py-24 mx-auto  text-gray-900 rounded-lg md:px-40">
       <div className="flex flex-col justify-center">
         <div>
-          <h2 className="text-3xl lg:text-5xl font-bold leading-tight">
+          <h2 className="text-2xl md:text-5xl font-bold leading-tight font-timesnew">
             Let&apos;s <span className="text-[#ff6000] mr-2">Connect</span>& <br />
             <span className="text-[#ff6000]">Collaborate</span>
           </h2>
@@ -66,11 +68,12 @@ export default function ContactSection() {
           ></textarea>
         </div>
         <div className="mt-8 ">
-          <div className="space-x-8  mt-10 flex flex-row items-center justify-center">
-            <div className="relative">
-              <button className="bg-[#50524f] absolute left-0 top-0 px-20 rounded-3xl md:pb-4 py-6"></button>
-              <button className="rounded-3xl bg-[#FF6000] relative ml-8 justify-end w-full">
-                <div className="text-white font-medium px-4 py-4  md:py-3 text-xs md:text-xs ">Send Message</div>
+          <div className="space-x-8  mt-10 flex flex-row  relative">
+            <div className="flex items-center pl-2">
+              <button className="bg-[#3D3F3C] absolute left-0 top-0 px-20 rounded-3xl md:pb-4 py-6 z-10"></button>
+              <Image src={arrow} alt={''} className="md:w-8 w-10 flex justify-center items-center z-20" />
+              <button className="rounded-3xl bg-[#FF6000] relative ml-4 justify-end z-10">
+                <div className="text-white font-medium px-4 py-4 md:py-3 text-xs md:text-xs">Send Message</div>
               </button>
             </div>
           </div>

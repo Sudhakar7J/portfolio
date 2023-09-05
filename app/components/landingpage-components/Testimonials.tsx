@@ -38,9 +38,9 @@ export default function Testimonials() {
   }, [])
 
   return (
-    <main className="px-4 md:px-20 py-4">
-      <div className="text-2xl md:text-3xl text-center font-semibold flex-wrap md:flex-nowrap">
-        <div className="text-2xl md:text-3xl text-black font-semibold">
+    <main className="px-4 md:px-40 py-4">
+      <div className="text-center font-semibold flex-wrap md:flex-nowrap">
+        <div className="text-2xl md:text-5xl text-black font-semibold font-timesnew">
           Testimonials that
           <br />
           <span>Speak to </span> <span className="text-[#FF6000]">My Results</span>
@@ -74,7 +74,7 @@ export default function Testimonials() {
         <button
           aria-label="Next slide"
           id="keen-slider-previous"
-          className="rounded-full cursor-pointer border border-[#50524f] bg-[#50524f] p-2 text-white transition hover:bg-[#ff6000] hover:text-white"
+          className="mx-4 rounded-full cursor-pointer border border-[#50524f] bg-[#50524f] p-2 text-white transition hover:bg-[#ff6000] hover:border-[#ff6000] hover:text-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +95,7 @@ export default function Testimonials() {
         <button
           aria-label="Next slide"
           id="keen-slider-next"
-          className="rounded-full cursor-pointer border border-[#50524f] bg-[#50524f] p-2 text-white transition hover:bg-[#ff6000] hover:text-white"
+          className="rounded-full cursor-pointer border border-[#50524f] bg-[#50524f] p-2 text-white transition hover:bg-[#ff6000] hover:border-[#ff6000] hover:text-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -2,12 +2,13 @@ import experiencemockdata from '@/app/mockdata/experience-mockdata'
 import Image from 'next/image'
 import landingimage from '../../assets/landingpage-assets/images/image-removebg-preview.png'
 import workingprocessmockdata from '@/app/mockdata/workingprocess-mockdata'
+import arrow from '@/app/assets/landingpage-assets/images/arrow.png'
 
 export default function WorkExperience() {
   return (
     <section>
-      <div className="flex flex-col px-4 md:px-4 py-10">
-        <div className="flex text-black text-3xl md:text-4xl font-semibold text-center justify-center space-x-3 md:py-20 flex-wrap md:flex-nowrap">
+      <div className="flex flex-col px-4 md:px-40 py-10 md:pb-20">
+        <div className="flex text-black text-2xl md:text-5xl font-semibold text-center justify-center space-x-3 md:py-20 flex-wrap md:flex-nowrap font-timesnew">
           <span>My</span>
           <span className="text-[#FF6000]">Education</span>
           <span>&</span>
@@ -15,8 +16,8 @@ export default function WorkExperience() {
         </div>
         <div className="flex md:flex-row flex-wrap md:flex-nowrap justify-between">
           {experiencemockdata.map((item, index) => (
-            <div className="md:w-1/2 py-4 md:py-0 px-2 md:px-20 flex flex-col flex-grow justify-between" key={index}>
-              <div className="text-[#FF6000] text-xl md:text-3xl font-semibold capitalize">{item.category}</div>
+            <div className="md:w-1/2 py-4 md:py-0 px-2  flex flex-col flex-grow justify-between" key={index}>
+              <div className="text-[#FF6000] text-xl md:text-3xl font-semibold capitalize font-timesnew">{item.category}</div>
               <div className=" border bg-[#3d3f3c] my-4"></div>
 
               {item.subcategories.map((subcategory, subIndex) => (
@@ -35,7 +36,7 @@ export default function WorkExperience() {
         </div>
       </div>
       <div>
-        <div className="rounded-3xl bg-[#f6f6f6] px-4 md:px-20 py-10 flex flex-row ">
+        <div className="rounded-3xl bg-[#f6f6f6] px-4 md:px-40 py-10 flex flex-row ">
           <div className="md:w-1/2 relative hidden md:block">
             <div className=" p-8 md:pr-40 flex items-center order-last md:order-last">
               <div className="relative">
@@ -101,9 +102,9 @@ export default function WorkExperience() {
               </div>
             </div>
           </div>
-          <div className="md:w-1/2 flex-col">
+          <div className="md:w-1/2 md:px-20 flex-col ">
             <div className="py-4">
-              <span className="text-2xl md:text-5xl font-semibold ">
+              <span className="text-3xl md:text-5xl font-semibold font-timesnew">
                 Why you <span className="text-[#ff6000]">Hire me</span> for your next projects?
               </span>
             </div>
@@ -111,29 +112,30 @@ export default function WorkExperience() {
               As someone who is a scientist who studies crows, I am telling you, specifically, in science, no one calls jackdaws crows. If you want to be &quot;specific&quot; like you said, then you
               shouldn&apos;t either. They&apos;re not the same thing.
             </div>
-            <div className="flex flex-row justify-around py-4">
+            <div className="flex flex-row justify-around py-4 ">
               <div className="flex flex-col">
-                <span className="text-4xl">600+</span>
-                <span className="text-xl capitalize">project completed</span>
+                <span className="text-4xl font-timesnew">600+</span>
+                <span className="text-xl capitalize text-[#50524f]">project completed</span>
               </div>
               <div className="flex flex-col">
-                <span className="text-4xl">5+</span>
-                <span className="text-xl capitalize">industry completed</span>
+                <span className="text-4xl font-timesnew">5+</span>
+                <span className="text-xl capitalize text-[#50524f]">industry completed</span>
               </div>
             </div>
-            <div className="space-x-8  mt-10 flex flex-row ">
-              <div className="relative">
-                <button className="bg-[#3D3F3C] absolute left-0 top-0 px-20 rounded-3xl md:pb-4 py-6 "></button>
-                <button className="rounded-3xl bg-[#FF6000] relative ml-8 justify-end w-full">
-                  <div className="text-white font-medium px-4 py-4  md:py-3 text-xs md:text-xs ">Hire me now</div>
+            <div className="space-x-8  mt-10 flex flex-row relative">
+              <div className="flex items-center pl-2">
+                <button className="bg-[#3D3F3C] absolute left-0 top-0 px-20 rounded-3xl md:pb-4 py-6 z-10"></button>
+                <Image src={arrow} alt={''} className="md:w-8 w-10 flex justify-center items-center z-20" />
+                <button className="rounded-3xl bg-[#FF6000] relative ml-4 justify-end z-10">
+                  <div className="text-white font-medium px-4 py-4 md:py-3 text-xs md:text-xs">Hire me Now</div>
                 </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className=" px-4 md:px-20 py-4 mt-4 ">
-        <div className="text-3xl md:text-4xl text-center font-semibold flex-wrap md:flex-nowrap">
+      <div className=" px-4 md:px-40 py-10 mt-4 ">
+        <div className="text-3xl md:text-5xl text-center font-semibold flex-wrap md:flex-nowrap font-timesnew">
           My Working <span className="text-[#ff6000]">Process</span>
         </div>
         <div className="flex text-center flex-wrap md:flex-nowrap">
@@ -143,7 +145,7 @@ export default function WorkExperience() {
                 <Image src={content.svg} alt={'svg'} className="text-white bg-white object-cover"></Image>
               </div>
               <div className="py-4 font-semibold text-2xl">{content.title}</div>
-              <div className="py-4 font-normal text-md">{content.content}</div>
+              <div className="py-4 font-normal text-md text-[#50524f]">{content.content}</div>
             </div>
           ))}
         </div>
