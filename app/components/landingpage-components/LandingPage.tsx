@@ -5,14 +5,17 @@ import img1 from '../../assets/testimonials-assets/images/pexels-anna-tarazevich
 import img2 from '../../assets/testimonials-assets/images/pexels-cottonbro-studio-5119214.jpg'
 import img3 from '../../assets/testimonials-assets/images/pexels-masha-raymers-2853198.jpg'
 import img4 from '../../assets/testimonials-assets/images/pexels-anna-tarazevich-4927361.jpg'
+import world from '@/app/assets/landingpage-assets/images/paper-plane.png'
 import play from '@/app/assets/landingpage-assets/images/play-button.png'
 
 export default function LandingPage() {
   return (
     <div className="flex flex-col md:flex-row">
       {/* Left Panel */}
-      <div className="md:w-1/2  md:pl-40 text-center md:text-start md:px-20 ">
-        <button className="border-2 border-[#8E8F8E] rounded-3xl px-6 py-3 font-medium mt-10">Hello!</button>
+      <div className="md:w-1/2  md:pl-40 text-center md:text-start md:px-20 relative">
+        <Image src={world} alt={''} className="md:w-4 w-4 flex justify-center items-center absolute max-md:top-8 max-md:left-48 md:top-8 md:left-[250px]" />
+
+        <button className="border-2 border-[#8E8F8E] rounded-3xl px-6 py-3 font-medium mt-10 z-20 relative bg-white">Hello!</button>
         <div className="md:mt-10 mt-4">
           <div className="md:text-6xl text-3xl font-semibold flex flex-col md:space-y-2 space-y-2 font-timesnew">
             <span className="text-[#FF6000]">I&apos;m Sudhakar,</span>
@@ -63,12 +66,12 @@ export default function LandingPage() {
       {/* Right Panel */}
       <div className="md:w-1/2 md:pr-40 flex items-center order-last md:order-last">
         <div className="relative">
-          <div className="md:w-96 md:h-72 h-48 w-48 bg-[#FF6000] absolute rounded-t-full top-2/3 md:top-2/4 left-1/2 transform -translate-x-1/2 -translate-y-2/3">
+          <div className="md:w-96 md:h-72 h-32 w-48 bg-[#FF6000] absolute rounded-t-full top-3/4 md:top-2/4 left-1/2 transform -translate-x-1/2 -translate-y-2/3">
             <div className="absolute rounded-full top-4 md:top-12 left-40 md:left-80 w-max   md:h-full z-10 ">
-              <Image src={overlay} alt={'overlay'} className="w-12 h-12 md:w-24 md:h-24 object-cover rounded-full  border-8 border-white bg-white" />
+              <Image src={overlay} alt={'overlay'} className="w-12 h-12 md:w-28 md:h-28 object-cover rounded-full  border-8 border-white bg-white" />
             </div>
           </div>
-          <Image src={landingimage} alt={'landingimage'} width={500} height={600} className="max-h-100 md:max-h-400 object-cover relative" />
+          <Image src={landingimage} alt={'landingimage'} width={500} height={600} className="max-h-100 md:max-h-400 px-20 md:px-0 object-cover relative" />
         </div>
       </div>
     </div>

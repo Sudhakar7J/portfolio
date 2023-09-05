@@ -23,8 +23,16 @@ body {
 
 .font-timesnew {
   font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
 }
 
 .font-verdana {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cliprad {
+  border-bottom-left-radius: 40%;
+}
+.clipradimage {
+  border-bottom-left-radius: 50%;
 }

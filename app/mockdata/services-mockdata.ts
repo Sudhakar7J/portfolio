@@ -13,7 +13,7 @@ const servicesmockdata = [
     title: 'Web Design',
     content: 'lorem ipsum dolor ssit amet consecteur adipacing elit,. sed to.',
     imageurl: appimg,
-    className: 'bg-[#50524f] hover:bg-[#FF6000] text-white text-xl px-2 py-2 rounded-3xl',
+    className: 'bg-[#50524f] hover:bg-[#FF6000] text-white text-xl px-2 py-2 cliprad rounded-3xl',
   },
   {
     id: 3,

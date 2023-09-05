@@ -33,7 +33,7 @@ export default function Navbar() {
       {/* Menu */}
       <div className={`md:flex md:space-x-6 items-center ${isMenuOpen ? 'block' : 'hidden'} max-md:w-full max-md:absolute max-md:right-0 max-md:py-4 max-md:top-14 bg-[#3D3F3C]`}>
         {navbardata.map((item) => (
-          <div key={item.id} className={`px-6 text-white font-normal cursor-pointer`}>
+          <div key={item.id} className={`px-6 text-white font-normal cursor-pointer hover:text-[#ff6000]`}>
             {item.name}
           </div>
         ))}

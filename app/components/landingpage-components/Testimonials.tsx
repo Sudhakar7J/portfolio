@@ -14,7 +14,7 @@ export default function Testimonials() {
         loop: true,
         slides: {
           origin: 'center',
-          perView: 1,
+          perView: 1.5,
           spacing: 16,
         },
         breakpoints: {
