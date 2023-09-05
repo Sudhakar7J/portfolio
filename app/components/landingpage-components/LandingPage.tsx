@@ -7,6 +7,7 @@ import img3 from '../../assets/testimonials-assets/images/pexels-masha-raymers-2
 import img4 from '../../assets/testimonials-assets/images/pexels-anna-tarazevich-4927361.jpg'
 import world from '@/app/assets/landingpage-assets/images/paper-plane.png'
 import play from '@/app/assets/landingpage-assets/images/play-button.png'
+import ButtonComponent from '../reusable-components/ButtonComponent'
 
 export default function LandingPage() {
   return (
@@ -14,7 +15,6 @@ export default function LandingPage() {
       {/* Left Panel */}
       <div className="md:w-1/2  md:pl-40 text-center md:text-start md:px-20 relative">
         <Image src={world} alt={''} className="md:w-4 w-4 flex justify-center items-center absolute max-md:top-8 max-md:left-48 md:top-8 md:left-[250px]" />
-
         <button className="border-2 border-[#8E8F8E] rounded-3xl px-6 py-3 font-medium mt-10 z-20 relative bg-white">Hello!</button>
         <div className="md:mt-10 mt-4">
           <div className="md:text-6xl text-3xl font-semibold flex flex-col md:space-y-2 space-y-2 font-timesnew">
@@ -29,15 +29,9 @@ export default function LandingPage() {
             </span>
           </div>
         </div>
-        <div className="mt-8 flex flex-row max-md:justify-between md:space-x-4 relative max-md:mx-2">
+        <div className="mt-10 flex flex-row max-md:justify-between md:space-x-4 relative max-md:mx-2">
           {/* First Child */}
-          <div className="flex items-center pl-2">
-            <button className="bg-[#3D3F3C] absolute left-0 top-0 px-20 rounded-3xl md:pb-4 py-6 z-10"></button>
-            <Image src={play} alt={''} className="md:w-8 w-10 flex justify-center items-center z-20" />
-            <button className="rounded-3xl bg-[#FF6000] relative ml-4 justify-end z-10">
-              <div className="text-white font-medium px-4 py-4 md:py-3 text-xs md:text-xs">View My Portfolio</div>
-            </button>
-          </div>
+          <ButtonComponent imageSrc={play} buttonText="View my Portfolio" />
 
           {/* Second Child */}
           <button className="border-2 border-[#8E8F8E] rounded-3xl font-medium px-4 py-2 text-xs lg:text-xs z-10">Hire Me</button>

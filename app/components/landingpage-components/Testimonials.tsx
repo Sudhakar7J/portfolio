@@ -14,14 +14,14 @@ export default function Testimonials() {
         loop: true,
         slides: {
           origin: 'center',
-          perView: 1.5,
+          perView: 1,
           spacing: 16,
         },
         breakpoints: {
           '(min-width: 1024px)': {
             slides: {
-              origin: 'auto',
-              perView: 1,
+              origin: 'center',
+              perView: 2.5,
               spacing: 40,
             },
           },
