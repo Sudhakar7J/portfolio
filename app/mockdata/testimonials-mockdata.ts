@@ -10,6 +10,7 @@ const testimonialmockdata = [
     author: 'Leo',
     designation: 'Movie Star',
     imgurl: img1,
+    starsrange: '3.0',
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ const testimonialmockdata = [
     author: 'Anirudh',
     designation: 'Music Director',
     imgurl: img2,
+    starsrange: '5.0',
   },
   {
     id: 3,
@@ -26,6 +28,7 @@ const testimonialmockdata = [
     author: 'Lokesh',
     designation: 'Director',
     imgurl: img3,
+    starsrange: '4.0',
   },
 ]
 

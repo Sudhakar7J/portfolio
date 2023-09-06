@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import arrow from '@/app/assets/landingpage-assets/images/arrow.png'
+import footerarrow from '@/app/assets/contact-assets/images/fast-forward-double-right-arrows.png'
 
 export default function Footer() {
   return (
@@ -24,6 +25,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <div className=" border bg-[#3d3f3c] my-4"></div>
 
       <div className="text-white body-font">
         <div className="container py-2 mx-auto">
@@ -40,63 +42,76 @@ export default function Footer() {
               </div>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4 flex flex-col items-center justify-center">
-              <h2 className="title-font font-medium text-[#ff6000] tracking-widest text-sm mb-3">CATEGORIES</h2>
-              <nav className="list-none mb-10">
-                <li>
-                  <a className="text-white hover:text-gray-800">First Link</a>
-                </li>
-                <li>
-                  <a className="text-white hover:text-gray-800">Second Link</a>
-                </li>
-                <li>
-                  <a className="text-white hover:text-gray-800">Third Link</a>
-                </li>
-                <li>
-                  <a className="text-white hover:text-gray-800">Fourth Link</a>
-                </li>
-              </nav>
+              <h2 className="title-font font-medium text-[#ff6000] tracking-widest text-sm md:text-xl mb-3">
+                Navigation
+                <nav className="list-none mb-10 space-y-4 text-sm md:text-base md:mt-6">
+                  <li>
+                    <a className="text-white hover:text-[#ff6000]">Home</a>
+                  </li>
+                  <li>
+                    <a className="text-white hover:text-[#ff6000]">About</a>
+                  </li>
+                  <li>
+                    <a className="text-white hover:text-[#ff6000]">Service</a>
+                  </li>
+                  <li>
+                    <a className="text-white hover:text-[#ff6000]">Resume</a>
+                  </li>
+                  <li>
+                    <a className="text-white hover:text-[#ff6000]">Projects</a>
+                  </li>
+                  <li>
+                    <a className="text-white hover:text-[#ff6000]">Contact Us</a>
+                  </li>
+                </nav>
+              </h2>
             </div>
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4 flex flex-col items-center justify-center">
-              <h2 className="title-font font-medium text-[#ff6000] tracking-widest text-sm mb-3">CATEGORIES</h2>
-              <nav className="list-none mb-10">
-                <li>
-                  <a className="text-white hover:text-gray-800">First Link</a>
-                </li>
-                <li>
-                  <a className="text-white hover:text-gray-800">Second Link</a>
-                </li>
-                <li>
-                  <a className="text-white hover:text-gray-800">Third Link</a>
-                </li>
-                <li>
-                  <a className="text-white hover:text-gray-800">Fourth Link</a>
-                </li>
-              </nav>
+            <div className="lg:w-1/4 md:w-1/2 w-full px-4 flex flex-col items-center justify-start">
+              <h2 className="title-font font-medium text-[#ff6000] tracking-widest text-sm md:text-xl mb-3">
+                Contact
+                <nav className="list-none mb-10 space-y-4 text-sm md:text-base md:mt-6">
+                  <li>
+                    <a className="text-white hover:text-[#ff6000]">+9080663333</a>
+                  </li>
+                  <li>
+                    <a className="text-white hover:text-[#ff6000]">www.example.com</a>
+                  </li>
+                  <li>
+                    <a className="text-white hover:text-[#ff6000]">example@gmail.com</a>
+                  </li>
+                  <li>
+                    <a className="text-white hover:text-[#ff6000]">
+                      Sathuvachari, <br />
+                      Vellore
+                    </a>
+                  </li>
+                </nav>
+              </h2>
             </div>
 
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-[#FF6000] tracking-widest text-sm mb-3">CONTACT US</h2>
-              <div className="flex flex-col md:flex-row justify-center items-center max-md:space-y-4">
-                {' '}
-                {/* Updated this line */}
-                <div className="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+            <div className="lg:w-1/4 md:w-1/2 w-full px-4 relative">
+              <h2 className="title-font font-medium text-[#FF6000] tracking-widest text-sm md:text-xl mb-3">Get the Latest Information</h2>
+              <div className="flex flex-col md:flex-row justify-center items-center max-md:space-y-4 md:mt-6">
+                <div className="relative flex flex-row ">
                   <input
                     type="text"
-                    id="footer-field"
-                    name="footer-field"
-                    placeholder="Email us"
-                    className="w-full bg-white rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    id="email-field"
+                    name="email-field"
+                    placeholder="Email address"
+                    className="w-full bg-white rounded border border-gray-300 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
-                </div>
-                <div className="justify-center item-center flex">
-                  <button className="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-[#FF6000] border-0 py-2 px-6 focus:outline-none hover:bg-white hover:text-[#FF6000] rounded">
-                    Button
-                  </button>
+                  <div className=" h-full  flex items-center justify-center">
+                    <button className="  flex-shrink-0 inline-flex text-white bg-[#FF6000] border-2 border-[#ff6000] py-2 px-2 focus:outline-none  rounded items-center justify-center">
+                      <Image src={footerarrow} alt="contact-icons" className="w-6 h-6 justify-center items-center " />
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div className=" border bg-[#3d3f3c] my-4"></div>
+
         <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
           <a className="flex title-font font-medium items-center md:justify-start justify-center text-[#f1f1f1]"></a>
           <p className="text-md text-[#f1f1f1] sm:ml-3 sm:mt-0 mt-4">

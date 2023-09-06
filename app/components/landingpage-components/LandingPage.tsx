@@ -11,18 +11,18 @@ import ButtonComponent from '../reusable-components/ButtonComponent'
 
 export default function LandingPage() {
   return (
-    <div className="flex flex-col md:flex-row">
+    <div className="flex flex-col md:flex-row h-full md:mt-12">
       {/* Left Panel */}
-      <div className="md:w-1/2  md:pl-40 text-center md:text-start md:px-20 relative">
+      <div className="md:w-1/2 md:pl-40 text-center md:text-start md:px-20 relative ">
         <Image src={world} alt={''} className="md:w-4 w-4 flex justify-center items-center absolute max-md:top-8 max-md:left-48 md:top-8 md:left-[250px]" />
-        <button className="border-2 border-[#8E8F8E] rounded-3xl px-6 py-3 font-medium mt-10 z-20 relative bg-white">Hello!</button>
+        <button className="border-2 border-[#8E8F8E] rounded-[40px] px-5 py-3 font-medium mt-10 z-20 relative bg-white text-xl">Hello!</button>
         <div className="md:mt-10 mt-4">
-          <div className="md:text-6xl text-3xl font-semibold flex flex-col md:space-y-2 space-y-2 font-timesnew">
+          <div className="md:text-6xl text-3xl font-semibold flex flex-col md:space-y-3 space-y-2 font-timesnew">
             <span className="text-[#FF6000]">I&apos;m Sudhakar,</span>
             <span>Frontend Developer</span>
-            <span>Based in India.</span>
+            <span>based in India.</span>
           </div>
-          <div className="md:text-lg text-sm md:mt-4 mt-4 font-sans font-medium text-[#50524f] max-md:px-4">
+          <div className="md:text-lg text-sm md:mt-4 mt-4 font-sans font-medium text-[#9e9b9b] max-md:px-4">
             <span>
               I have extensive experience in frontend development, specializing in React, Next.js, and Tailwind CSS. I&apos;ve built interactive and responsive web applications, optimized for
               performance and user experience.
@@ -34,31 +34,31 @@ export default function LandingPage() {
           <ButtonComponent imageSrc={play} buttonText="View my Portfolio" />
 
           {/* Second Child */}
-          <button className="border-2 border-[#8E8F8E] rounded-3xl font-medium px-4 py-2 text-xs lg:text-xs z-10">Hire Me</button>
+          <button className="border-2 border-[#8E8F8E] rounded-[40px] font-semibold px-4 py-2 text-xs lg:text-[16px] z-10">Hire Me</button>
         </div>
 
-        <div className="flex flex-row pt-10 items-center ">
+        <div className="flex flex-row pt-10 items-center mb-10">
           <div className="flex flex-row relative items-center justify-between rounded-full border-4 border-white ">
-            <Image src={img1} alt={''} className="rounded-full border-4 border-white object-cover object-center h-12 w-12" style={{ marginRight: '-14px' }} />
-            <Image src={img2} alt={''} className="rounded-full border-4 border-white object-cover object-center h-12 w-12" style={{ marginRight: '-14px' }} />
-            <Image src={img3} alt={''} className="rounded-full border-4 border-white object-cover object-center h-12 w-12" style={{ marginRight: '-14px' }} />
-            <Image src={img4} alt={''} className="rounded-full border-4 border-white object-cover object-center h-12 w-12" style={{ marginRight: '-14px' }} />
+            <Image src={img1} alt={''} className="rounded-full border-4 border-white object-cover object-center h-14 w-14" style={{ marginRight: '-14px' }} />
+            <Image src={img2} alt={''} className="rounded-full border-4 border-white object-cover object-center h-14 w-14" style={{ marginRight: '-14px' }} />
+            <Image src={img3} alt={''} className="rounded-full border-4 border-white object-cover object-center h-14 w-14" style={{ marginRight: '-14px' }} />
+            <Image src={img4} alt={''} className="rounded-full border-4 border-white object-cover object-center h-14 w-14" style={{ marginRight: '-14px' }} />
 
-            <div className="rounded-full border-4 border-white w-12 h-12 flex items-center justify-center bg-gray-300">
+            <div className="rounded-full border-4 border-white w-14 h-14 flex items-center justify-center bg-gray-300">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-12 h-6 text-[#ff6000] object-cover object-center">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M12 4v16m8-8H4"></path>
               </svg>
             </div>
           </div>
-          <div className="flex flex-col space-y-2 flex-grow px-4 justify-center font-timesnew font-semibold">
-            <span className="text-xl">450+ </span>
+          <div className="flex flex-col space-y-1 flex-grow px-4 justify-center font-timesnew font-semibold">
+            <span className="text-2xl  font-bold">450+ </span>
             <span className="text-base capitalize">Happy clients</span>
           </div>
         </div>
       </div>
 
       {/* Right Panel */}
-      <div className="md:w-1/2 md:pr-40 flex items-center order-last md:order-last">
+      <div className="md:w-1/2 md:pr-40 flex items-end order-last md:order-last">
         <div className="relative">
           <div className="md:w-96 md:h-72 h-32 w-48 bg-[#FF6000] absolute rounded-t-full top-3/4 md:top-2/4 left-1/2 transform -translate-x-1/2 -translate-y-2/3">
             <div className="absolute rounded-full top-4 md:top-12 left-40 md:left-80 w-max   md:h-full z-10 ">

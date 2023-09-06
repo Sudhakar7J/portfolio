@@ -23,7 +23,7 @@ body {
 
 .font-timesnew {
   font-family: 'Times New Roman', Times, serif;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .font-verdana {
@@ -34,5 +34,5 @@ body {
   border-bottom-left-radius: 40%;
 }
 .clipradimage {
-  border-bottom-left-radius: 50%;
+  border-bottom-left-radius: 60%;
 }

@@ -4,6 +4,7 @@ import 'keen-slider/keen-slider.min.css'
 import KeenSlider from 'keen-slider'
 import testimonialmockdata from '@/app/mockdata/testimonials-mockdata'
 import Image from 'next/image'
+import StarRating from '../reusable-components/StarRating'
 export default function Testimonials() {
   const sliderRef = useRef(null)
 
@@ -17,18 +18,18 @@ export default function Testimonials() {
           perView: 1,
           spacing: 16,
         },
+
         breakpoints: {
           '(min-width: 1024px)': {
             slides: {
               origin: 'center',
-              perView: 2.5,
-              spacing: 40,
+              perView: 2,
+              spacing: 20,
             },
           },
         },
       })
 
-      // Add event listeners for previous and next buttons
       const keenSliderPrevious = document.getElementById('keen-slider-previous')
       const keenSliderNext = document.getElementById('keen-slider-next')
 
@@ -38,21 +39,31 @@ export default function Testimonials() {
   }, [])
 
   return (
-    <main className="px-4 md:px-40 py-4">
+    <main className="px-4 md:px-40 py-4 bg-[#f6f6f6] rounded-3xl md:py-20">
       <div className="text-center font-semibold flex-wrap md:flex-nowrap">
-        <div className="text-2xl md:text-5xl text-black font-semibold font-timesnew">
+        <div className="text-3xl md:text-6xl text-black font-semibold font-timesnew">
           Testimonials that
           <br />
           <span>Speak to </span> <span className="text-[#FF6000]">My Results</span>
         </div>
+        <div className="text-md md:text-xl font-normal text-[#737473] md:px-40  md:py-6 py:2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu odio eu sapien tincidunt tempor a id mi. Sed a sem ut ante sollicitudin tincidunt et sed ex.
+        </div>
       </div>
+
       <div ref={sliderRef} className="keen-slider text-center py-8 px-auto ">
         {testimonialmockdata.map((testimonial) => (
-          <div key={testimonial.id} className="keen-slider__slide  rounded-3xl">
-            <blockquote className="flex h-full flex-col text-center items-center justify-center bg-[#f1f1f1] p-6 shadow-sm sm:p-8 lg:p-12">
-              <div>
+          <div key={testimonial.id} className="keen-slider__slide  rounded-3xl md:rounded-xl">
+            <blockquote className="flex h-full  flex-col text-center items-start justify-center bg-[#ffffff] p-4 shadow-sm sm:p-8 lg:p-1 lg:px-4">
+              <div className="flex flex-col items-start">
+                <div className="flex flex-row space-x-4">
+                  <div className="mt-2">
+                    <StarRating rating={testimonial.starsrange} starSize={10} />
+                  </div>
+                  <div className="mt-2 items-center justify-center flex text-xl">{testimonial.starsrange}</div>
+                </div>
                 <div className="mt-4">
-                  <p className="mt-4 leading-relaxed text-gray-700 ">{testimonial.content}</p>
+                  <p className="leading-relaxed text-gray-700 ">{testimonial.content}</p>
                 </div>
               </div>
               <div className="flex flex-row items-center justify-center py-4">
@@ -61,16 +72,16 @@ export default function Testimonials() {
                     <Image src={testimonial.imgurl} alt="image" className="w-12 h-12 rounded-full object-center object-fill" />
                   </div>
                 </div>
-                <div className="flex flex-col ml-4">
-                  <footer className="text-sm font-medium text-gray-700 mt-2 sm:mt-0">{testimonial.author}</footer>
-                  <div className="text-sm font-medium text-gray-700">{testimonial.designation}</div>
+                <div className="flex flex-col ml-4 items-start">
+                  <footer className="text-base font-medium text-black mt-2 sm:mt-0">{testimonial.author}</footer>
+                  <div className="text-base font-medium text-[#50524f]">{testimonial.designation}</div>
                 </div>
               </div>
             </blockquote>
           </div>
         ))}
       </div>
-      <div className="text-center justify-center">
+      <div className="text-center justify-center md:mt-10">
         <button
           aria-label="Next slide"
           id="keen-slider-previous"
