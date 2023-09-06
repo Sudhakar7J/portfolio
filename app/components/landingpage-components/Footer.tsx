@@ -25,7 +25,7 @@ export default function Footer() {
       <div className="text-white body-font">
         <div className="container py-2 mx-auto">
           <div className="flex flex-wrap md:text-left text-center order-first">
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+            <div className="lg:w-1/4 md:w-1/2 w-min px-4">
               <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-left">
                 <a className="flex title-font font-medium items-center justify-start  text-white">
                   <div className="relative w-8 h-8 bg-[#FF6000] rounded-full flex items-center justify-center">
