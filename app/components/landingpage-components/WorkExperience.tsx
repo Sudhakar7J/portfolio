@@ -10,7 +10,7 @@ export default function WorkExperience() {
   return (
     <section>
       <div className="flex flex-col px-4 md:px-40 py-8 md:pb-20">
-        <div className="flex text-black text-2xl md:text-[54px] font-semibold text-center justify-center space-x-3 md:py-20 flex-wrap md:flex-nowrap font-timesnew">
+        <div className="flex text-black text-3xl md:text-[54px] font-semibold text-center justify-center space-x-3 md:py-20 flex-wrap md:flex-nowrap font-timesnew">
           <span>My</span>
           <span className="text-[#FF6000]">Education</span>
           <span>&</span>
@@ -18,18 +18,18 @@ export default function WorkExperience() {
         </div>
         <div className="flex md:flex-row flex-wrap md:flex-nowrap md:pb-10">
           {experiencemockdata.map((item, index) => (
-            <div className="md:w-1/2 py-4 md:py-0 px-8  flex flex-col flex-grow " key={index}>
-              <div className="text-[#FF6000] text-xl md:text-[38px] font-semibold capitalize font-timesnew">{item.category}</div>
-              <div className=" border bg-[#3d3f3c] my-8"></div>
+            <div className="md:w-1/2 py-4 md:py-0 md:px-8  flex flex-col flex-grow " key={index}>
+              <div className="text-[#FF6000] text-3xl md:text-[38px] font-semibold capitalize font-timesnew">{item.category}</div>
+              <div className=" border bg-[#3d3f3c] my-4"></div>
 
               {item.subcategories.map((subcategory, subIndex) => (
                 <div key={subIndex} className="flex md:flex-row justify-between py-4">
-                  <div className=" px-auto space-y-3">
-                    <div className="text-black text-md md:text-3xl capitalize font-semibold ">{subcategory.name}</div>
-                    <div className="text-[#3d3f3c] text-md md:text-2xl capitalize ">{subcategory.location}</div>
+                  <div className=" px-auto space-y-3 max-md:w-1/2">
+                    <div className="text-black  text-xl md:text-3xl capitalize font-semibold ">{subcategory.name}</div>
+                    <div className="text-[#3d3f3c]  text-sm md:text-2xl capitalize">{subcategory.location}</div>
                   </div>
-                  <div className="px-2 md:ml-auto">
-                    <div className="border-0 px-6 py-3 text-sm md:text-xl text-center flex font-medium bg-[#f1f1f1] rounded-xl items-center justify-center">{subcategory.year}</div>
+                  <div className="px-2 md:ml-auto max-md:w-1/2">
+                    <div className="border-0 md:px-6 px-2 py-2 md:py-3 text-sm md:text-xl text-center flex font-medium bg-[#f1f1f1] rounded-xl items-center justify-center">{subcategory.year}</div>
                   </div>
                 </div>
               ))}
@@ -124,26 +124,25 @@ export default function WorkExperience() {
           </div>
           <div className="md:w-1/2  flex-col ">
             <div className="py-4">
-              <span className="text-3xl md:text-[56px] font-semibold font-timesnew">
-                Why you <span className="text-[#ff6000] ">Hire me</span> for <br />
-                Your next projects?
+              <span className="text-3xl md:text-[56px] font-semibold font-timesnew" style={{ fontWeight: 550 }}>
+                Why you <span className="text-[#ff6000] ">Hire me</span> for your next projects?
               </span>
             </div>
-            <div className="font-normal text-[#50524f] py-4 md:pr-20 ">
+            <div className="font-normal text-[#50524f] md:py-4 md:pr-20 ">
               As someone who is a scientist who studies crows, I am telling you, specifically, in science, no one calls jackdaws crows. If you want to be &quot;specific&quot; like you said, then you
               shouldn&apos;t either. They&apos;re not the same thing.
             </div>
             <div className="flex flex-row justify-between py-4 md:pr-40 ">
               <div className="flex flex-col">
-                <span className="text-4xl font-timesnew ">600+</span>
-                <span className="text-xl capitalize text-[#50524f]">project completed</span>
+                <span className="text-2xl md:text-4xl font-timesnew ">600+</span>
+                <span className="text-sm md:text-xl capitalize text-[#50524f]">project completed</span>
               </div>
               <div className="flex flex-col">
-                <span className="text-4xl font-timesnew">5+</span>
-                <span className="text-xl capitalize text-[#50524f]">industry completed</span>
+                <span className="text-2xl md:text-4xl font-timesnew">5+</span>
+                <span className="text-sm md:text-xl capitalize text-[#50524f]">industry covered</span>
               </div>
             </div>
-            <div className=" mt-8 ">
+            <div className=" my-8 ">
               <ButtonComponent imageSrc={arrow} buttonText="Hire me now!" />
             </div>
           </div>
@@ -157,8 +156,8 @@ export default function WorkExperience() {
           {workingprocessmockdata.map((content, index) => (
             <div key={index} className="flex flex-row">
               <div className="flex flex-col justify-center items-center py-4 md:py-8 px-4 text-center">
-                <div className="rounded-full bg-black h-20 w-20 flex items-center justify-center  text-white">
-                  <Image src={content.svg} alt={'svg'} className="text-white bg-white object-cover w-10 h-10"></Image>
+                <div className="rounded-full bg-[#50524f] h-20 w-20 flex items-center justify-center  text-white">
+                  <Image src={content.svg} alt={'svg'} className="text-white fill-white object-cover w-10 h-10"></Image>
                 </div>
                 <div className="py-4 font-semibold text-2xl">{content.title}</div>
                 <div className=" font-normal text-md text-[#50524f]">{content.content}</div>

@@ -1,6 +1,6 @@
-import svg1 from '@/app/assets/workexperience-assets/images/monitor-play.png'
-import svg2 from '@/app/assets/workexperience-assets/images/circuit-board.png'
-import svg3 from '@/app/assets/workexperience-assets/images/circle-dollar-sign.png'
+import svg1 from '@/app/assets/workexperience-assets/images/lightbulb.png'
+import svg2 from '@/app/assets/workexperience-assets/images/web-design.png'
+import svg3 from '@/app/assets/workexperience-assets/images/graph.png'
 
 const workingprocessmockdata = [
   {

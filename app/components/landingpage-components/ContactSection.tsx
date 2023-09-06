@@ -7,10 +7,10 @@ import contactmockdata from '@/app/mockdata/contact-mockdata'
 
 export default function ContactSection() {
   return (
-    <div className="px-5 grid gap-8 grid-cols-1 md:grid-cols-2 py-24 mx-auto text-gray-900 rounded-lg">
+    <div className="px-5 grid gap-8 grid-cols-1 md:grid-cols-2 pt-24 mx-auto text-gray-900 rounded-lg">
       <div className="flex flex-col justify-center">
         <div className=" md:px-10">
-          <h2 className="text-2xl md:text-5xl font-bold leading-tight font-timesnew">
+          <h2 className="text-3xl md:text-5xl font-bold leading-tight font-timesnew">
             Let&apos;s <span className="text-[#ff6000] mr-2">Connect</span>& <br />
             <span className="text-[#ff6000]">Collaborate</span>
           </h2>
@@ -34,7 +34,7 @@ export default function ContactSection() {
         </div>
         <div className="md:mt-12 text-center"></div>
       </div>
-      <form className="bg-[#f1f1f1] px-2 md:px-10  py-8 rounded-[40px] ">
+      <form className="md:bg-[#f1f1f1] px-2 md:px-10  py-8 rounded-[40px] ">
         <div className="px-auto md:space-x-4 ">
           <InputField type="text" placeholder="First Name*" required />
           <InputField type="text" placeholder="Last Name*" required />
@@ -43,14 +43,14 @@ export default function ContactSection() {
           <InputField type="email" placeholder="Email*" required />
           <InputField type="password" placeholder="Password*" required />
         </div>
-        <div className="mt-8 ">
+        <div className="md:mt-8 ">
           <InputField type="text" placeholder="Subject*" required isFullWidth />
         </div>
 
         <div className="mt-8">
           <span className="uppercase text-sm text-gray-600 font-bold"></span>
           <textarea
-            className="w-full h-40 bg-white font-semibold text-gray-900 mt-2 p-3 rounded-3xl focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-indigo-400"
+            className="w-full h-40 md:bg-[#f1f1f1] max-md:bg-[#f6f6f6] font-semibold text-gray-900 mt-2 p-3 rounded-3xl focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-indigo-400"
             placeholder="Enter your Message"
             required
           ></textarea>

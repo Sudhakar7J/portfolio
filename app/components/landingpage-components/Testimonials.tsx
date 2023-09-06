@@ -63,7 +63,7 @@ export default function Testimonials() {
                   <div className="mt-2 items-center justify-center flex text-xl">{testimonial.starsrange}</div>
                 </div>
                 <div className="mt-4">
-                  <p className="leading-relaxed text-gray-700 ">{testimonial.content}</p>
+                  <p className="leading-relaxed text-gray-700 max-md:text-justify">{testimonial.content}</p>
                 </div>
               </div>
               <div className="flex flex-row items-center justify-center py-4">

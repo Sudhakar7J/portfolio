@@ -17,9 +17,9 @@ export default function Services() {
           {servicesmockdata.map((content, index) => (
             <div key={content.id} className="flex md:px-4 py-4 md:py-0 hover:text-white">
               <div className={content?.className}>
-                <div className="text-xl  lg:text-2xl md:text-3xl text-white hover:text-white   py-4 px-8 font-timesnew flex flex-row justify-between items-center">
+                <div className="text-xl  lg:text-2xl md:text-3xl text-white hover:text-white   md:py-4 md:px-8 py-4 px-4 font-timesnew flex flex-row justify-between items-center">
                   <div className="font-bold text-2xl md:text-4xl md:py-4">{content.title}</div>
-                  <Image src={arrow} alt={''} className="md:w-14 w-10 flex justify-center items-center z-20 " />
+                  <Image src={arrow} alt={''} className="md:w-14 w-12 flex justify-center items-center z-20 " />
                 </div>
 
                 <div className="border bg-[#3d3f3c]"></div>

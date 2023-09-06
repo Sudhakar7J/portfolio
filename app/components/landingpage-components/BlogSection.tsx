@@ -8,16 +8,22 @@ import record from '@/app/assets/contact-assets/images/record.png'
 export default function BlogSection() {
   return (
     <div>
-      <div className="rounded-3xl bg-[#f6f6f6] px-4 md:px-40 py-14">
-        <div className="flex flex-row py-10">
+      <div className="rounded-3xl bg-[#f6f6f6] px-4 md:px-40 py-6">
+        <div className="flex flex-row py-10 max-md:text-center justify-center">
           <div className="text-2xl md:text-6xl text-black font-semibold font-timesnew">
-            <div className=" space-x-3 ">
+            <div className=" md:space-x-3 md:block hidden">
               From
               <span className="text-[#FF6000] ml-2">
                 My <br />
                 Blog{' '}
               </span>
               Posts
+            </div>
+            <div className=" md:space-x-3 max-md:block hidden">
+              From
+              <span className="text-[#FF6000] ml-2">
+                My Blog<span> Posts</span>
+              </span>
             </div>
           </div>
           <div className="md:flex-grow"></div>
