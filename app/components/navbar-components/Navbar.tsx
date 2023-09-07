@@ -31,9 +31,9 @@ export default function Navbar() {
         </button>
       </div>
       {/* Menu */}
-      <div className={`md:flex md:space-x-1 items-center  ${isMenuOpen ? 'block' : 'hidden'} max-md:w-full max-md:absolute max-md:right-0 max-md:py-4 max-md:top-14 bg-[#3D3F3C] z-10`}>
+      <div className={`md:flex md:space-x-1 items-center  ${isMenuOpen ? 'block ' : 'hidden'} max-md:w-full max-md:absolute max-md:right-0 max-md:py-4 max-md:top-14 bg-[#3D3F3C] z-10`}>
         {navbardata.map((item) => (
-          <div key={item.id} className={`px-6 text-white font-normal cursor-pointer  hover:text-[#ff6000] z-100`}>
+          <div key={item.id} className={`px-6 py-3 text-white font-normal cursor-pointer  hover:text-[#ff6000] z-100`}>
             {item.name}
           </div>
         ))}

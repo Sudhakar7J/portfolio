@@ -7,7 +7,7 @@ export default function Services() {
   return (
     <main className="rounded-3xl bg-[#3d3f3c] px-4 md:px-40 py-10 md:py-24  z-10">
       <div className="flex flex-col flex-wrap">
-        <div className="text-2xl md:text-[54px] text-white font-timesnew md:py-4">
+        <div className="text-3xl md:text-[54px] text-white font-timesnew md:py-4">
           <span className="text-white">My </span>
           <span className="text-[#FF6000]">Services</span>
         </div>

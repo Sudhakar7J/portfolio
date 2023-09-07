@@ -39,7 +39,7 @@ export default function Testimonials() {
   }, [])
 
   return (
-    <main className="px-4 md:px-40 py-4 bg-[#f6f6f6] rounded-3xl md:py-20">
+    <main className="px-4  py-4 bg-[#f6f6f6] rounded-3xl md:py-20">
       <div className="text-center font-semibold flex-wrap md:flex-nowrap">
         <div className="text-3xl md:text-6xl text-black font-semibold font-timesnew">
           Testimonials that

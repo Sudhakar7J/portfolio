@@ -32,7 +32,7 @@ export default function LandingPage() {
             </span>
           </div>
         </div>
-        <div className="mt-10 flex flex-row max-md:justify-between md:space-x-4 relative max-md:mx-2">
+        <div className="mt-10 flex flex-row max-md:space-x-6 md:space-x-4 relative max-md:mx-2">
           {/* First Child */}
           <ButtonComponent imageSrc={play} buttonText="View my Portfolio" />
 

@@ -35,15 +35,18 @@ export default function BlogSection() {
           <div className="container  py-4 mx-auto md:mb-32">
             <div className="flex flex-wrap -m-4">
               {blogmockdata.map((blog) => (
-                <div key={blog.id} className="p-4 md:w-1/3 px-auto py-auto">
-                  <div className="h-full border-0 border-gray-200 border-opacity-60 rounded-lg overflow-hidden ">
+                <div key={blog.id} className="p-4 md:w-1/3 px-auto py-auto max-md:border-2 max-md:rounded-xl max-md:py-10 max-md:hover:bg-[#dadbda]">
+                  <div className="h-full border-0 border-gray-200 border-opacity-60 rounded-lg overflow-hidden flex flex-col justify-center  ">
                     <Image className="md:h-56 w-full object-cover object-center cursor-pointer rounded-3xl  " src={blog.imgurl} alt="blog" />
                     <div className="md:py-4 py-4 ">
-                      <div className=" text-xs title-font font-medium text-gray-400 mb-1 cursor-pointer px-auto w-28">
-                        <div className="border w-min rounded-3xl px-4 py-1 bg-white text-[#50524f] text-md">{blog.tags}</div>
+                      <div className=" text-xs title-font  font-medium text-gray-400 mb-1 cursor-pointer px-auto w-28">
+                        <div className="border w-min  rounded-3xl px-4 py-1 bg-white text-[#50524f] text-md">{blog.tags}</div>
                       </div>
                     </div>
-                    <h1 className="title-font text-lg md:text-2xl text-gray-900 mb-3 cursor-pointer font-timesnew font-bold" style={{ fontWeight: '800' }}>
+                    <h1
+                      className="title-font  text-lg md:text-2xl text-gray-900 mb-3 cursor-pointer font-timesnew font-bold text-ellipsis hover:line-clamp-none line-clamp-2"
+                      style={{ fontWeight: '800' }}
+                    >
                       {blog.title}
                     </h1>
                     <div className="flex items-center flex-wrap justify-between text-sm md:text-xl">
